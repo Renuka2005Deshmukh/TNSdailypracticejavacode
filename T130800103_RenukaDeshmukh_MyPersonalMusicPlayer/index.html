@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>🎵  Music Player 🎵</h1>
+        <div class="menu">
+            <button id="all-songs-btn">📂 All Songs</button>
+            <button id="favourites-btn">❤️ Favourites</button>
+            <input type="text" id="search" placeholder="Search songs...">
+        </div>
+    </header>
+
+    <!-- Song List -->
+    <div id="song-list"></div>
+
+    <!-- Player Controls -->
+    <div class="player-controls">
+        <img id="current-cover" src="images/deewani.jpg" alt="cover">
+        <div class="song-info">
+            <h3 id="current-title">Deewani Mastani</h3>
+            <p id="current-artist">Shreya Ghoshal</p>
+        </div>
+        
+        <div class="controls">
+            <button id="like-btn">♡</button>
+            <button id="prev-btn">⏮</button>
+            <button id="play-pause-btn">▶</button> <!-- One toggle button -->
+            <button id="next-btn">⏭</button>
+        </div>
+        
+        <div class="progress-container">
+            <span id="current-time">0:00</span>
+            <input type="range" id="progress" min="0" value="0">
+            <span id="duration">0:00</span>
+        </div>
+    
+        <div class="volume-container">
+            🔊 <input type="range" id="volume" min="0" max="1" step="0.01" value="1">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
